@@ -84,10 +84,20 @@ int main()
             ballIy = -ballIy;
         }
 
-        if (ball.x <= pong_w && ball.y + ball_w >= player1.y && ball.y <= player1.y + pong_h ||
-            ball.x + ball_w > SCREEN_WIDTH - pong_w && ball.y + ball_w >= player2.y && ball.y <= player2.y + pong_h)
+        if (ball.x < pong_w && 
+            ball.y + ball_w >= player1.y && 
+            ball.y <= player1.y + pong_h)
         {
             ballIx = -ballIx;
+            ball.x = pong_w;
+            ballIy = rand() % 2 ? moveSpeed : -moveSpeed;
+        }
+        if (ball.x > SCREEN_WIDTH - pong_w - ball_w && 
+            ball.y + ball_w >= player2.y && 
+            ball.y <= player2.y + pong_h)
+        {
+            ballIx = -ballIx;
+            ball.x = SCREEN_WIDTH - pong_w - ball_w;
             ballIy = rand() % 2 ? moveSpeed : -moveSpeed;
         }
 
