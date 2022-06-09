@@ -1,7 +1,7 @@
 # Vita Pong
 <p align="center"><img src="./screenshots/game.jpg"></p>
 
-Pong game realized on Vita with SDL2.
+This is a Pong game realized on Vita with SDL2.
 
 ## Build and run
 1. Install [VITASDK](https://vitasdk.org/).
