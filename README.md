@@ -4,7 +4,6 @@
 Pong game realized on Vita with SDL2.
 
 ## Build and run
-
 1. Install [VITASDK](https://vitasdk.org/).
 2. Clone repo `git clone https://github.com/Hammerill/vita-pong && cd vita-pong`.
 3. Build `cmake . && make` (if it throws an error, try typing this again).
