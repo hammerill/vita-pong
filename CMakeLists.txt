@@ -22,12 +22,8 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(VITA_MKSFOEX_FLAGS "${VITA_MKSFOEX_FLAGS} -d PARENTAL_LEVEL=1")
 
-set(VITA_INCLUDE_DIR "$ENV{VITASDK}/arm-vita-eabi/include/")
-set(SDL2_INCLUDE_DIR "$ENV{VITASDK}/arm-vita-eabi/include/SDL2")
-
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-  ${VITA_INCLUDE_DIR}
-  ${SDL2_INCLUDE_DIR}
+  "$ENV{VITASDK}/arm-vita-eabi/include/"
 )
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
