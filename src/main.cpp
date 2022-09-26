@@ -49,7 +49,7 @@ int main()
 
     SDL_Rect ball = {(SCREEN_WIDTH / 2) - (ball_w / 2), (SCREEN_HEIGHT / 2) - (ball_w / 2), ball_w, ball_w};
 
-    const int moveSpeed = 10;
+    const int moveSpeed = SCREEN_WIDTH / 96;
     const int stickDeadZone = 10;
     const int stickCenter = 128;
     const int stickMax = stickCenter;
